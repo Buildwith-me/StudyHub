@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Notes Sharing Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudyHub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#notes">Notes</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <section id="home">
+
+        <h2>Welcome to StudyHub</h2>
+
+        <p>Find and share your study materials easily.</p>
+
+    </section>
+
+
+    <section id="notes">
+
+        <h2>Study Materials</h2>
+
+        <input type="text" id="search"
+        placeholder="Search your notes">
+
+        <button onclick="searchNotes()">Search</button>
+
+
+        <div class="subjects">
+
+            <button onclick="showAll()">All</button>
+
+            <button onclick="showDBMS()">DBMS</button>
+
+            <button onclick="showJava()">Java</button>
+
+            <button onclick="showWeb()">Web Development</button>
+
+        </div>
+
+
+        <div class="notes" id="notesList">
+
+            <div class="card">
+                <h3>DBMS Notes</h3>
+                <p>Database Management System basics.</p>
+                <a href="dbms.txt" download>Download Notes</a>
+            </div>
+
+            <div class="card">
+                <h3>Python Notes</h3>
+                <p>Introduction to Python programming.</p>
+                <a href="python.txt" download>Download Notes</a>
+            </div>
+
+            <div class="card">
+                <h3>Web Development Notes</h3>
+                <p>Learn basic HTML, CSS, and JavaScript.</p>
+                <a href="web.txt" download>Download Notes</a>
+            </div>
+
+            <div class="card">
+                <h3>Operating Systems Notes</h3>
+                <p>Learn about process management and memory management.</p>
+                <a href="os.txt" download>Download Notes</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            StudyHub is a simple website where students
+            can find and download academic notes.
+            It is developed using HTML, CSS and JavaScript.
+        </p>
+
+    </section>
+
+    <footer>
+        <p>© 2026 StudyHub | Student Notes Sharing Website</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
